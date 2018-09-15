@@ -1,8 +1,12 @@
 apply plugin: 'groovy'
 
 dependencies {
-    testCompile 'org.codehaus.groovy:groovy-all:2.4.15'
-    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+    compile 'org.apache.commons:commons-lang3:3.8'
+    compile 'com.cookingfox:guava-preconditions:0.1.4'
+
+
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.1'
+    testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.1'
     testCompile 'org.assertj:assertj-core:3.11.1'
     testCompile 'org.mockito:mockito-core:2.22.0'
 }
