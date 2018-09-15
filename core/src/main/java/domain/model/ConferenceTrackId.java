@@ -10,6 +10,14 @@ public class ConferenceTrackId {
         this.id = UUID.randomUUID().toString();
     }
 
+    public ConferenceTrackId(String id) {
+        this.id = id;
+    }
+
+    public String value() {
+        return id;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

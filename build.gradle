@@ -19,3 +19,9 @@ subprojects {
     }
     version = '1.0'
 }
+
+project(':infrastructure:persistence') {
+    dependencies {
+        compile project(':core')
+    }
+}

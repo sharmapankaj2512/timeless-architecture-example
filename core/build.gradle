@@ -1,9 +1,6 @@
-apply plugin: 'groovy'
-
 dependencies {
     compile 'org.apache.commons:commons-lang3:3.8'
     compile 'com.cookingfox:guava-preconditions:0.1.4'
-
 
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.3.1'
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.1'

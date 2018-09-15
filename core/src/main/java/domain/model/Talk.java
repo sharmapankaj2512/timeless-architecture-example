@@ -39,4 +39,12 @@ public class Talk {
 
         return Objects.hash(minutes, title);
     }
+
+    public String title() {
+        return title;
+    }
+
+    public int minutes() {
+        return minutes;
+    }
 }
