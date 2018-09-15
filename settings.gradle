@@ -1,0 +1,8 @@
+rootProject.name = 'timeless-architecture-example'
+include 'core'
+include 'infrastructure'
+include 'infrastructure:controllers'
+include 'infrastructure:messaging'
+include 'infrastructure:persistence'
+
+

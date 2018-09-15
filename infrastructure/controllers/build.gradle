@@ -1,0 +1,16 @@
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.3.RELEASE")
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+springBoot {
+    mainClassName = 'configuration.Application'
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web"
+}
