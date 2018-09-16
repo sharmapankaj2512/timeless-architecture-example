@@ -25,3 +25,15 @@ project(':infrastructure:persistence') {
         compile project(':core')
     }
 }
+
+project(':infrastructure:controllers') {
+    dependencies {
+        compile project(':core')
+    }
+}
+
+project(':infrastructure:controllers') {
+    dependencies {
+        compile project(':infrastructure:persistence')
+    }
+}
